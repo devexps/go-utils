@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/devexps/go-pkg/v2/mask/masker"
+	"github.com/devexps/go-utils/mask/masker"
 )
 
 func TestTagFilter(t *testing.T) {

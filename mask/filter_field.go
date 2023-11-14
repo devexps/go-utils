@@ -1,7 +1,7 @@
 package mask
 
 import (
-	"github.com/devexps/go-pkg/v2/mask/masker"
+	"github.com/devexps/go-utils/mask/masker"
 )
 
 type fieldFilter struct {

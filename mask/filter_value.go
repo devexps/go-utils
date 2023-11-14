@@ -3,7 +3,7 @@ package mask
 import (
 	"strings"
 
-	"github.com/devexps/go-pkg/v2/mask/masker"
+	"github.com/devexps/go-utils/mask/masker"
 )
 
 type valueFilter struct {
