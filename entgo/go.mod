@@ -7,6 +7,7 @@ require (
 	entgo.io/ent v0.11.0
 	github.com/devexps/go-micro/v2 v2.0.2
 	github.com/devexps/go-utils v0.0.0-20231113101715-2b2e1590c2c8
+	github.com/google/uuid v1.3.0
 )
 
 require (
@@ -16,7 +17,6 @@ require (
 	github.com/go-openapi/inflect v0.19.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/go-cmp v0.5.9 // indirect
-	github.com/google/uuid v1.3.0 // indirect
 	github.com/hashicorp/hcl/v2 v2.10.0 // indirect
 	github.com/jhump/protoreflect v1.10.1 // indirect
 	github.com/mitchellh/go-wordwrap v0.0.0-20150314170334-ad45545899c7 // indirect
