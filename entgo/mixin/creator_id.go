@@ -15,6 +15,7 @@ func (CreatorId) Fields() []ent.Field {
 		field.Uint32("creator_id").
 			Comment("creator_id").
 			Immutable().
-			Optional(),
+			Optional().
+			Nillable(),
 	}
 }

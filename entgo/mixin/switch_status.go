@@ -15,6 +15,7 @@ func (SwitchStatus) Fields() []ent.Field {
 		field.Enum("status").
 			Comment("status").
 			Optional().
+			Nillable().
 			Default("ON").
 			Values(
 				"OFF",

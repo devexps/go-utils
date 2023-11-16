@@ -14,7 +14,8 @@ func (CreateBy) Fields() []ent.Field {
 	return []ent.Field{
 		field.Uint32("create_by").
 			Comment("create_by").
-			Optional(),
+			Optional().
+			Nillable(),
 	}
 }
 
@@ -28,7 +29,8 @@ func (UpdateBy) Fields() []ent.Field {
 	return []ent.Field{
 		field.Uint32("update_by").
 			Comment("update_by").
-			Optional(),
+			Optional().
+			Nillable(),
 	}
 }
 
@@ -42,7 +44,8 @@ func (DeleteBy) Fields() []ent.Field {
 	return []ent.Field{
 		field.Uint32("delete_by").
 			Comment("delete_by").
-			Optional(),
+			Optional().
+			Nillable(),
 	}
 }
 
@@ -56,7 +59,8 @@ func (CreatedBy) Fields() []ent.Field {
 	return []ent.Field{
 		field.Uint32("created_by").
 			Comment("created_by").
-			Optional(),
+			Optional().
+			Nillable(),
 	}
 }
 
@@ -68,7 +72,8 @@ func (UpdatedBy) Fields() []ent.Field {
 	return []ent.Field{
 		field.Uint32("updated_by").
 			Comment("updated_by").
-			Optional(),
+			Optional().
+			Nillable(),
 	}
 }
 
@@ -82,6 +87,7 @@ func (DeletedBy) Fields() []ent.Field {
 	return []ent.Field{
 		field.Uint32("deleted_by").
 			Comment("deleted_by").
-			Optional(),
+			Optional().
+			Nillable(),
 	}
 }

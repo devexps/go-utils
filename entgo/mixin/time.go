@@ -15,7 +15,8 @@ func (CreatedAt) Fields() []ent.Field {
 		field.Time("created_at").
 			Comment("created_at").
 			Immutable().
-			Optional(),
+			Optional().
+			Nillable(),
 	}
 }
 
@@ -29,7 +30,8 @@ func (UpdatedAt) Fields() []ent.Field {
 	return []ent.Field{
 		field.Time("updated_at").
 			Comment("updated_at").
-			Optional(),
+			Optional().
+			Nillable(),
 	}
 }
 
@@ -43,7 +45,8 @@ func (DeletedAt) Fields() []ent.Field {
 	return []ent.Field{
 		field.Time("deleted_at").
 			Comment("deleted_at").
-			Optional(),
+			Optional().
+			Nillable(),
 	}
 }
 
@@ -70,7 +73,8 @@ func (CreateTime) Fields() []ent.Field {
 		field.Time("create_time").
 			Comment("create_time").
 			Immutable().
-			Optional(),
+			Optional().
+			Nillable(),
 	}
 }
 
@@ -84,7 +88,8 @@ func (UpdateTime) Fields() []ent.Field {
 	return []ent.Field{
 		field.Time("update_time").
 			Comment("update_time").
-			Optional(),
+			Optional().
+			Nillable(),
 	}
 }
 
@@ -98,7 +103,8 @@ func (DeleteTime) Fields() []ent.Field {
 	return []ent.Field{
 		field.Time("delete_time").
 			Comment("delete_time").
-			Optional(),
+			Optional().
+			Nillable(),
 	}
 }
 

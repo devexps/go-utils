@@ -18,6 +18,7 @@ func (CreateTimestamp) Fields() []ent.Field {
 			Comment("create_time").
 			Immutable().
 			Optional().
+			Nillable().
 			DefaultFunc(time.Now().UnixMilli),
 	}
 }
@@ -33,6 +34,7 @@ func (UpdateTimestamp) Fields() []ent.Field {
 		field.Int64("update_time").
 			Comment("update_time").
 			Optional().
+			Nillable().
 			UpdateDefault(time.Now().UnixMilli),
 	}
 }
@@ -47,7 +49,8 @@ func (DeleteTimestamp) Fields() []ent.Field {
 	return []ent.Field{
 		field.Int64("delete_time").
 			Comment("delete_time").
-			Optional(),
+			Optional().
+			Nillable(),
 	}
 }
 
@@ -77,6 +80,7 @@ func (CreatedAtTimestamp) Fields() []ent.Field {
 			Comment("created_at").
 			Immutable().
 			Optional().
+			Nillable().
 			DefaultFunc(time.Now().UnixMilli),
 	}
 }
@@ -92,6 +96,7 @@ func (UpdatedAtTimestamp) Fields() []ent.Field {
 		field.Int64("updated_at").
 			Comment("updated_at").
 			Optional().
+			Nillable().
 			UpdateDefault(time.Now().UnixMilli),
 	}
 }
@@ -106,7 +111,8 @@ func (DeletedAtTimestamp) Fields() []ent.Field {
 	return []ent.Field{
 		field.Int64("deleted_at").
 			Comment("deleted_at").
-			Optional(),
+			Optional().
+			Nillable(),
 	}
 }
 
