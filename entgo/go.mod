@@ -8,7 +8,7 @@ require (
 	entgo.io/contrib v0.4.5
 	entgo.io/ent v0.12.5
 	github.com/XSAM/otelsql v0.26.0
-	github.com/devexps/go-micro/v2 v2.0.5
+	github.com/devexps/go-micro/v2 v2.0.6
 	github.com/devexps/go-utils v1.0.4
 	github.com/google/uuid v1.4.0
 )
@@ -33,8 +33,7 @@ require (
 	go.opentelemetry.io/otel/trace v1.21.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	golang.org/x/mod v0.14.0 // indirect
-	golang.org/x/sys v0.14.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
-	golang.org/x/tools v0.15.0 // indirect
+	golang.org/x/tools v0.16.0 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 )
