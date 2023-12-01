@@ -3,6 +3,7 @@ package entgo
 import (
 	"errors"
 	"fmt"
+	"github.com/XSAM/otelsql"
 	"time"
 
 	"entgo.io/ent/dialect/sql"
@@ -38,7 +39,11 @@ func (c *EntClient[T]) Close() {
 
 // CreateDriver creates a database driver
 func CreateDriver(driverName, dsn string, maxIdleConnections, maxOpenConnections int, connMaxLifetime time.Duration) (*sql.Driver, error) {
-	drv, err := sql.Open(driverName, dsn)
+	otelDN, err := otelsql.Register(driverName)
+	if err != nil {
+		return nil, errors.New(fmt.Sprintf("failed registering otelsql: %v", err))
+	}
+	drv, err := sql.Open(otelDN, dsn)
 	if err != nil {
 		return nil, errors.New(fmt.Sprintf("failed opening connection to db: %v", err))
 	}
